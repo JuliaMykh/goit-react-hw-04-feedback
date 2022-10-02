@@ -42,6 +42,7 @@ export function App() {
     if (totalFeedback > 0) {
       result = Math.ceil((goodFeedback / totalFeedback) * 100);
     }
+
     return `${result}%`;
   };
 
@@ -56,7 +57,7 @@ export function App() {
         </Section>
 
         <Section title="Statistics">
-            {countTotalFeedback > 0 ? (
+            {countTotalFeedback() > 0 ? (
               <Statistics
                 good={good}
                 neutral={neutral}
