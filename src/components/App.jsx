@@ -46,12 +46,14 @@ export function App() {
     return `${result}%`;
   };
 
+  const options = ['good', 'neutral', 'bad'];
+
     return (
       <div>
 
         <Section  title="Please leave feedback">
         < FeedbackOptions
-          options={['good', 'neutral', 'bad']}
+          options={options}
           onClickBtn={handleClickBtn}
           />
         </Section>
